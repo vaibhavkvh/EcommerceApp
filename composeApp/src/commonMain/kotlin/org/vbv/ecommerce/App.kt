@@ -1,28 +1,24 @@
 package org.vbv.ecommerce
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.safeContentPadding
-import androidx.compose.material3.Button
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
-
-import ecommerceapp.composeapp.generated.resources.Res
-import ecommerceapp.composeapp.generated.resources.compose_multiplatform
+import org.vbv.ecommerce.presentation.SplashScreen
+import org.vbv.ecommerce.util.AppColor.colorWinAppBg
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
-        Scaffold {  }
+    val appColorSchema = lightColorScheme(
+        background = colorWinAppBg
+    )
+    MaterialTheme(colorScheme = appColorSchema) {
+        Scaffold {
+            SplashScreen(Modifier)
+        }
     }
 }
