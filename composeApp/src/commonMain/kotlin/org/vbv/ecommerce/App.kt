@@ -7,18 +7,17 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import org.vbv.ecommerce.presentation.SplashScreen
-import org.vbv.ecommerce.util.AppColor.colorWinAppBg
-
+import org.vbv.ecommerce.presentation.RegistrationScreen
+import org.vbv.ecommerce.util.AppColor.colorWhite
 @Composable
 @Preview
 fun App() {
     val appColorSchema = lightColorScheme(
-        background = colorWinAppBg
+        background = colorWhite
     )
     MaterialTheme(colorScheme = appColorSchema) {
         Scaffold {
-            SplashScreen(Modifier)
+            RegistrationScreen(Modifier.padding(it))
         }
     }
 }
