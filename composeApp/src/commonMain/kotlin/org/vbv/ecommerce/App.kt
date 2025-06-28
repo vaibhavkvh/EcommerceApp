@@ -9,11 +9,10 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.vbv.ecommerce.presentation.RegistrationScreen
 import org.vbv.ecommerce.util.AppColor.colorWhite
+
 @Composable
-@Preview
 fun App() {
     val appColorSchema = lightColorScheme(
-        background = colorWhite
     )
     MaterialTheme(colorScheme = appColorSchema) {
         Scaffold {
